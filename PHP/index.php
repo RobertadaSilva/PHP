@@ -16,15 +16,27 @@ $idade = 22;
 
 if($idade >= 6 && $idade <= 12)
 {
-    echo 'Competidor infantil';
+    for($i = 0; $i <= count($categorias); $i++)
+    {
+        if($categorias[$i] == 'infantil')
+            echo "O(A) nadador(a) " .$nome. " compete na categoria infantil";
+    }
 }
 else if($idade >= 13 && $idade <= 18)
 {
-    echo 'Competidor adolescente';
+    for($i = 0; $i <= count($categorias); $i++)
+    {
+        if($categorias[$i] == 'adolescente')
+            echo "O(A) nadador(a) " .$nome. " compete na categoria adolescente";
+    }
 }
 else if($idade > 18)
 {
-    echo 'Competidor adulto';
+   for($i = 0; $i <= count($categorias); $i++)
+    {
+        if($categorias[$i] == 'adulto')
+            echo "O(A) nadador(a) " .$nome. " compete na categoria adulto";
+    }  
 }
 else
 {
